@@ -1,7 +1,7 @@
 +++
 title = 'Getting Started with Git'
 date = 2026-02-01T12:52:20+05:30
-draft = true
+draft = false
 +++
 
 

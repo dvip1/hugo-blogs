@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Getting Started with Git | દ્વીપBlogs</title>
+<meta name="keywords" content="">
+<meta name="description" content="Initial Process
+1. GitHub Account
+Make sure you already have a GitHub company account. If you don’t ask your supervisor to provide it to you.
+2. Install Dependencies
+Check if you have git installed from this command in PowerShell.
+git —version
+If it’s not installed, then install it as such
+winget install --id Git.Git -e --source winget
+To check if it’s installed, run the command git --version once again in a new PowerShell window or tab.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/my-first-post/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.da3211e5ef867bf2b75fd5a6515cfed7195c011e8ab735694e203810a827097b.css" integrity="sha256-2jIR5e&#43;Ge/K3X9WmUVz&#43;1xlcAR6KtzVpTiA4EKgnCXs=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/my-first-post/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="દ્વીપBlogs (Alt + H)">દ્વીપBlogs</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Getting Started with Git
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+    </h1>
+    <div class="post-meta"><span title='2026-02-01 12:52:20 +0530 IST'>February 1, 2026</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h2 id="initial-process">Initial Process<a hidden class="anchor" aria-hidden="true" href="#initial-process">#</a></h2>
+<h3 id="1-github-account">1. GitHub Account<a hidden class="anchor" aria-hidden="true" href="#1-github-account">#</a></h3>
+<p>Make sure you already have a GitHub company account. If you don’t ask your supervisor to provide it to you.</p>
+<h3 id="2-install-dependencies">2. Install Dependencies<a hidden class="anchor" aria-hidden="true" href="#2-install-dependencies">#</a></h3>
+<p>Check if you have git installed from this command in PowerShell.
+<code>git —version</code></p>
+<p>If it’s not installed, then install it as such</p>
+<p><code>winget install --id Git.Git -e --source winget</code></p>
+<p>To check if it’s installed, run the command <code>git --version</code> once again in a new PowerShell window or tab.</p>
+<h3 id="3-sign-in">3. Sign in<a hidden class="anchor" aria-hidden="true" href="#3-sign-in">#</a></h3>
+<p>The next step is to sign in using your credentials.</p>
+<p>Continue on PowerShell.</p>
+<ul>
+<li>configure name:
+<code>git config --global user.name &quot;firstname lastname&quot;</code></li>
+<li>configure email (same as GitHub mail):
+<code>git config --global user.email &quot;company-mail@email.com&quot;</code></li>
+</ul>
+<p>And then sign in to your GitHub account itself.
+Now there are multiple ways to do this.</p>
+<p><strong>GITHUB CLI (METHOD 1):</strong></p>
+<p>One of the easiest is to install GitHub cli on PowerShell.</p>
+<p>With the command below:
+<code>winget install -e --id GitHub.cli</code></p>
+<p>Open up a new window of PowerShell or a new tab of your shell.</p>
+<p><code>gh --version</code> if it spits out version without giving any error then it’s successfully installed.</p>
+<p>and login by <code>gh auth login</code></p>
+<p>It would give you several prompts, and follow the instruction down below if you can’t navigate.</p>
+<p>select  &gt; GitHub</p>
+<pre><code>  &gt; HTTPS
+
+  &gt; ‘Y’ for “Authenticate Git with your GitHub credentials&quot; prompt
+  &gt; Login with a web browser 
+</code></pre>
+<p>copy paste the link and login with the otp given on your terminal window.
+And there you have it, no complication of gpg keys or ssh keys.</p>
+<p>GITHUB CLI (gh) gives you flexibility, as it allows you to quickly switch between accounts, quick  login and logout and a great user friendly experience if you use GitHub.</p>
+<p><strong>SSH (METHOD 2):</strong></p>
+<p>This is another great method. But this is more advanced method, so avoid if you don’t already know what SSH is.</p>
+<p>Follow the link below, it explains things pretty well:
+<a href="https://dev.to/thevinitgupta/connecting-to-github-with-ssh-windows-2oj3">https://dev.to/thevinitgupta/connecting-to-github-with-ssh-windows-2oj3</a></p>
+<h2 id="usage">Usage<a hidden class="anchor" aria-hidden="true" href="#usage">#</a></h2>
+<h3 id="git-clone">Git Clone<a hidden class="anchor" aria-hidden="true" href="#git-clone">#</a></h3>
+<p>Once you’re logged in and ready to go. Clone the project you want to work on, using <code>git clone &lt;url&gt;</code> command.
+Open the repository that you want to clone on your browser,
+copy the URL.</p>
+<p>Cloning to new directory</p>
+<p><code>git clone &lt;copied-url&gt;</code></p>
+<p>this would by default make a new directory containing the project.</p>
+<p>Cloning in current directory</p>
+<p><code>git clone &lt;copied-url&gt; .</code></p>
+<p>would clone the project in current directory without creating a new one. Helpful when you have multiple instances of the same project and want to name each folder differently.</p>
+<h3 id="git-branches">Git Branches<a hidden class="anchor" aria-hidden="true" href="#git-branches">#</a></h3>
+<p>Here’s some basics about git branches: <a href="https://www.w3schools.com/git/git_branch.asp">Link</a></p>
+<p>List Branches using:</p>
+<p><code>git branch</code></p>
+<p>to get updated list of branches from origin:</p>
+<p><code>git fetch origin</code></p>
+<p>to create new branch:</p>
+<p><code>git checkout -b {new-branch-name}</code></p>
+<p>to change branch use</p>
+<p><code>git checkout {branch-name}</code></p>
+<h3 id="basic-workflows">Basic Workflows<a hidden class="anchor" aria-hidden="true" href="#basic-workflows">#</a></h3>
+<p>I’d list a basic workflow of how you’d work
+once you have cloned and changed to the required branch.</p>
+<ol>
+<li>Pull changes from your peers. This would merge code from the given branch to yours.
+<code>git pull {branch-name}</code></li>
+<li>Check the status, which gives bunch of useful information
+<code>git status</code></li>
+<li>Stage your current changes
+<code>git add {file-name or directory-name or .}</code> , ‘.’ stages all the changes.</li>
+<li>Commit your changes
+<code>git commit -m “{describe changes you made}”</code></li>
+<li>Push the changes
+<code>git push origin {branch-name}</code></li>
+</ol>
+<p>Using graphical interface (vscode):
+vscode has this features built-in, do check them out if you like to do things graphically:
+<a href="https://code.visualstudio.com/docs/sourcecontrol/overview">https://code.visualstudio.com/docs/sourcecontrol/overview</a>
+They are much more simple and easy to use. But knowing the commands might come in handy when you don’t have access to vscode.</p>
+<h2 id="explore-more">Explore more<a hidden class="anchor" aria-hidden="true" href="#explore-more">#</a></h2>
+<p>Git and GitHub has ton of features that I haven’t covered here. Please checkout the link below if you want to learn them in detail. Learning basic Merge and merge conflicts are essential for working in team environment.</p>
+<p><a href="https://www.w3schools.com/git/default.asp?remote=github">https://www.w3schools.com/git/default.asp?remote=github</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2026 <a href="http://localhost:1313/">દ્વીપBlogs</a></span>
+    
+
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script></body>
+
+</html>

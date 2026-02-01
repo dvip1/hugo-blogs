@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>દ્વીપBlogs</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on દ્વીપBlogs</description>
+    <generator>Hugo -- 0.156.0-DEV</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Feb 2026 12:52:20 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Getting Started with Git</title>
+      <link>http://localhost:1313/posts/my-first-post/</link>
+      <pubDate>Sun, 01 Feb 2026 12:52:20 +0530</pubDate>
+      <guid>http://localhost:1313/posts/my-first-post/</guid>
+      <description>&lt;h2 id=&#34;initial-process&#34;&gt;Initial Process&lt;/h2&gt;
+&lt;h3 id=&#34;1-github-account&#34;&gt;1. GitHub Account&lt;/h3&gt;
+&lt;p&gt;Make sure you already have a GitHub company account. If you don’t ask your supervisor to provide it to you.&lt;/p&gt;
+&lt;h3 id=&#34;2-install-dependencies&#34;&gt;2. Install Dependencies&lt;/h3&gt;
+&lt;p&gt;Check if you have git installed from this command in PowerShell.
+&lt;code&gt;git —version&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;If it’s not installed, then install it as such&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;winget install --id Git.Git -e --source winget&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;To check if it’s installed, run the command &lt;code&gt;git --version&lt;/code&gt; once again in a new PowerShell window or tab.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

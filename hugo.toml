@@ -53,5 +53,5 @@ theme = 'PaperMod'
 
 [services]
   [services.googleAnalytics]
-    id = 'G-LYGQMT****' # Use your actual ID here
+    id = 'G-WLYGQMT86N' # Use your actual ID here
 

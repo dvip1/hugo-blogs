@@ -80,6 +80,26 @@
 
     gtag('config', 'G-WLYGQMT86N');
 </script>
+<link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+    window.addEventListener("load", function () {
+        window.cookieconsent.initialise({
+            "palette": {
+                "popup": { "background": "#252525", "text": "#ffffff" },
+                "button": { "background": "#666666", "text": "#ffffff" }
+            },
+            "theme": "classic",
+            "content": {
+                "message": "This blog uses cookies to analyze traffic (Google Analytics).",
+                "dismiss": "Got it!",
+                "link": "Learn more",
+                "href": "/privacy-policy"
+            }
+        })
+    });
+</script>
 </head>
 <body class="list" id="top">
     <header class="header">

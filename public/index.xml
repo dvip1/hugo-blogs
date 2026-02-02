@@ -6,8 +6,26 @@
     <description>Recent content on દ્વીપBlogs</description>
     <generator>Hugo -- 0.156.0-DEV</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Feb 2026 12:52:20 +0530</lastBuildDate>
+    <lastBuildDate>Mon, 02 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Privacy Policy</title>
+      <link>http://localhost:1313/privacy-policy/</link>
+      <pubDate>Mon, 02 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/privacy-policy/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Welcome to &lt;strong&gt;દ્વીપBlogs&lt;/strong&gt;. Your privacy is important to me. This policy explains what information is collected when you visit this site and how it is used.&lt;/p&gt;
+&lt;h2 id=&#34;1-information-collection-google-analytics&#34;&gt;1. Information Collection (Google Analytics)&lt;/h2&gt;
+&lt;p&gt;I use &lt;strong&gt;Google Analytics 4 (GA4)&lt;/strong&gt; to understand how visitors interact with my blog. This helps me see which posts are helpful and which topics I should write more about.&lt;/p&gt;
+&lt;p&gt;GA4 collects data such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Your general location (City/Country).&lt;/li&gt;
+&lt;li&gt;The device and browser you are using.&lt;/li&gt;
+&lt;li&gt;How long you stayed on a page.&lt;/li&gt;
+&lt;li&gt;Which links you clicked.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; This data is anonymized and does not allow me to identify you personally. Google Analytics uses &amp;ldquo;cookies&amp;rdquo; to collect this data.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Getting Started with Git</title>
       <link>http://localhost:1313/posts/my-first-post/</link>

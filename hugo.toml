@@ -2,3 +2,56 @@ baseURL = 'https://blogs.dvippatel.in/'
 languageCode = 'en-us'
 title = "દ્વીપBlogs"
 theme = 'PaperMod'
+
+[params]
+    DateFormat = "January 2, 2006"
+    defaultTheme = "auto" # Changed from auto to dark to test if it's working
+    
+    # Theme Features
+    ShowReadingTime = true
+    ShowShareButtons = true
+    ShowPostNavLinks = true
+    ShowBreadCrumbs = true
+    ShowCodeCopyButtons = true 
+    ShowRssButtonInSectionTermList = true
+    UseHugoToc = true
+
+[params.profileMode]
+
+  enabled = false
+  title = "ExampleSite"
+  subtitle = "This is subtitle"
+  imageUrl = "<img location>"
+  imageWidth = 120
+  imageHeight = 120
+  imageTitle = "my image"
+
+    [[params.profileMode.buttons]]
+    name = "Posts"
+    url = "posts"
+
+    [[params.profileMode.buttons]]
+    name = "Tags"
+    url = "tags"
+
+  [params.homeInfoParams]
+  Title = "Hi there 👋"
+  Content = "Welcome to my blog. I am Dvip Patel. I post random things that comes to my mind. If you like what you see, follow along! "
+
+  [[params.socialIcons]]
+  name = "x"
+  url = "https://x.com/PatelDvip/"
+
+  [[params.socialIcons]]
+  name = "linkedin"
+  url = "https://www.linkedin.com/in/dvip-patel-23320a230/"
+
+  [[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/dvip1"
+
+
+[services]
+  [services.googleAnalytics]
+    id = 'G-LYGQMT****' # Use your actual ID here
+

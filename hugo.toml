@@ -6,6 +6,7 @@ theme = 'PaperMod'
 [params]
     DateFormat = "January 2, 2006"
     defaultTheme = "auto" # Changed from auto to dark to test if it's working
+    author = "Dvip Patel"
     
     # Theme Features
     ShowReadingTime = true
@@ -15,6 +16,7 @@ theme = 'PaperMod'
     ShowCodeCopyButtons = true 
     ShowRssButtonInSectionTermList = true
     UseHugoToc = true
+
 
 [params.profileMode]
 

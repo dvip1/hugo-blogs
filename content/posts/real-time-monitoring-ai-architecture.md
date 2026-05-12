@@ -66,6 +66,40 @@ The MediaMTX stream is encrypted by our backend, so only those who are authorize
 
 And voilà! We have our real-time monitoring system.
 
+### Problèmes
+Since I've build such a large system, I  faced a lot of bottlenecks. 
+Here are few below:  
+- **latency issues**: I faced this a lot earlier, turning down the camera quality(1440p-720p) helped a ton. I started using yolov8n models and basically most of the issues disappeared. 
+- **frequest reconnecting**: So earlier, I was writing everything in a `json` file. But that become a problem quickly, because windows many of the threads were trying to write in json file at the same time which made my entire process restart, hence frequent reconnecting issues with camera. 
+
+- **finding bottlenecks itself**: One of the hardest parts wasn’t fixing the issues, but actually discovering *where* they were happening.  
+  To solve this, I created a custom `StreamProfiler` system that tracked:
+  
+  - frame processing times
+  - encoding latency
+  - queue depth
+  - frame drops
+  - RTP payload fragmentation
+  - FPS gate skips
+
+  This helped me identify problems such as:
+  
+  - YOLO inference exceeding frame budgets
+  - queue overflows causing frame overwrites
+  - payload fragmentation increasing stream overhead
+  - processing stages dominating total latency
+
+  For example, in one profiling session:
+  
+  - YOLO tracking alone consumed `60ms`
+  - total frame processing reached `72ms`
+  - while the target frame budget was only `50ms` for `20 FPS`
+
+  The profiler also detected queue overflows and fragmented RTP packets automatically, making it much easier to understand why the stream degraded under load.
+
+  Without profiling, debugging real-time systems becomes mostly educated guessing.
+
+
 ### Extensive Modular Design
 This is where MediaMTX really shines. Not only does it handle the protocol, but it can also handle multiple streams and multiple cameras. So, the design becomes much more extensible with almost no effort.
 

@@ -2,23 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:18315/posts/</loc>
+    <loc>http://localhost:10715/posts/</loc>
     <lastmod>2026-05-11T23:22:00+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:18315/posts/real-time-monitoring-ai-architecture/</loc>
+    <loc>http://localhost:10715/posts/real-time-monitoring-ai-architecture/</loc>
     <lastmod>2026-05-11T23:22:00+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:18315/</loc>
+    <loc>http://localhost:10715/</loc>
     <lastmod>2026-05-11T23:22:00+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:18315/privacy-policy/</loc>
+    <loc>http://localhost:10715/privacy-policy/</loc>
     <lastmod>2026-02-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:18315/posts/my-first-post/</loc>
+    <loc>http://localhost:10715/posts/my-first-post/</loc>
     <lastmod>2026-02-01T12:52:20+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:18315/categories/</loc>
+    <loc>http://localhost:10715/categories/</loc>
   </url><url>
-    <loc>http://localhost:18315/tags/</loc>
+    <loc>http://localhost:10715/tags/</loc>
   </url>
 </urlset>

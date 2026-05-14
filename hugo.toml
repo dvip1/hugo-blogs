@@ -2,6 +2,7 @@ baseURL = 'https://blogs.dvippatel.in/'
 languageCode = 'en-us'
 title = "દ્વીપBlogs"
 theme = 'PaperMod'
+buildFuture = true
 
 [params]
     DateFormat = "January 2, 2006"

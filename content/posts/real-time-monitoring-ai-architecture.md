@@ -3,6 +3,16 @@
 title = 'Real-Time Monitoring AI Architecture'
 date = 2026-05-11T23:22:00+05:30
 draft = false
+description = "How Dvip Patel designed a real-time AI monitoring architecture using RTSP, MediaMTX, FastAPI, WebSockets, YOLO, and profiling."
+summary = "A practical architecture write-up for a real-time object detection monitoring system using RTSP camera streams, MediaMTX, YOLO, FastAPI, WebSockets, PostgreSQL, and stream profiling."
+tags = ["AI", "Computer Vision", "RTSP", "MediaMTX", "FastAPI", "YOLO", "WebSockets"]
+categories = ["Projects", "Architecture"]
+keywords = ["Dvip Patel", "real-time monitoring AI architecture", "object detection monitoring system", "RTSP MediaMTX FastAPI", "YOLO stream profiling"]
+
+[cover]
+image = "/images/posts/real-time-monitoring-ai-architecture/surface-pro-8-1.webp"
+alt = "Real-time AI monitoring architecture diagram with RTSP, MediaMTX, object detection, FastAPI, and WebSockets"
+hidden = true
 +++
 
 In this article, I’ll explain the architecture of the Real-Time Object Detection monitoring system I designed, what decisions I made, why I made them, and how I did the testing, which is also very interesting.

@@ -1,11 +1,117 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Tags on દ્વીપBlogs</title>
-    <link>http://localhost:32724/tags/</link>
-    <description>Recent content in Tags on દ્વીપBlogs</description>
+    <title>Tags on Dvip Patel</title>
+    <link>http://localhost:1313/tags/</link>
+    <description>Recent content in Tags on Dvip Patel</description>
     <generator>Hugo -- 0.161.0</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:32724/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 15 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI</title>
+      <link>http://localhost:1313/tags/ai/</link>
+      <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Analytics</title>
+      <link>http://localhost:1313/tags/analytics/</link>
+      <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/analytics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dashboards</title>
+      <link>http://localhost:1313/tags/dashboards/</link>
+      <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/dashboards/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Database Security</title>
+      <link>http://localhost:1313/tags/database-security/</link>
+      <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/database-security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Text-to-SQL</title>
+      <link>http://localhost:1313/tags/text-to-sql/</link>
+      <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/text-to-sql/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Computer Vision</title>
+      <link>http://localhost:1313/tags/computer-vision/</link>
+      <pubDate>Mon, 11 May 2026 23:22:00 +0530</pubDate>
+      <guid>http://localhost:1313/tags/computer-vision/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>FastAPI</title>
+      <link>http://localhost:1313/tags/fastapi/</link>
+      <pubDate>Mon, 11 May 2026 23:22:00 +0530</pubDate>
+      <guid>http://localhost:1313/tags/fastapi/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MediaMTX</title>
+      <link>http://localhost:1313/tags/mediamtx/</link>
+      <pubDate>Mon, 11 May 2026 23:22:00 +0530</pubDate>
+      <guid>http://localhost:1313/tags/mediamtx/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>RTSP</title>
+      <link>http://localhost:1313/tags/rtsp/</link>
+      <pubDate>Mon, 11 May 2026 23:22:00 +0530</pubDate>
+      <guid>http://localhost:1313/tags/rtsp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>WebSockets</title>
+      <link>http://localhost:1313/tags/websockets/</link>
+      <pubDate>Mon, 11 May 2026 23:22:00 +0530</pubDate>
+      <guid>http://localhost:1313/tags/websockets/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>YOLO</title>
+      <link>http://localhost:1313/tags/yolo/</link>
+      <pubDate>Mon, 11 May 2026 23:22:00 +0530</pubDate>
+      <guid>http://localhost:1313/tags/yolo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Developer Tools</title>
+      <link>http://localhost:1313/tags/developer-tools/</link>
+      <pubDate>Sun, 01 Feb 2026 12:52:20 +0530</pubDate>
+      <guid>http://localhost:1313/tags/developer-tools/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Git</title>
+      <link>http://localhost:1313/tags/git/</link>
+      <pubDate>Sun, 01 Feb 2026 12:52:20 +0530</pubDate>
+      <guid>http://localhost:1313/tags/git/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>GitHub</title>
+      <link>http://localhost:1313/tags/github/</link>
+      <pubDate>Sun, 01 Feb 2026 12:52:20 +0530</pubDate>
+      <guid>http://localhost:1313/tags/github/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Windows</title>
+      <link>http://localhost:1313/tags/windows/</link>
+      <pubDate>Sun, 01 Feb 2026 12:52:20 +0530</pubDate>
+      <guid>http://localhost:1313/tags/windows/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

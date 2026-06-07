@@ -5,15 +5,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Real-Time Monitoring AI Architecture | દ્વીપBlogs</title>
-<meta name="keywords" content="">
-<meta name="description" content="In this article, I’ll explain the architecture of the Real-Time Object Detection monitoring system I designed, what decisions I made, why I made them, and how I did the testing, which is also very interesting.
-Below is my stack and how the components interact with each other.
-
-Let’s start from the beginning.
-First Phase
-First there was Light.
-I mean the Security Camera. It uses a protocol called ‘RTSP’, which MediaMTX uses to take in the feed and transport it to our service 1.">
+<title>Real-Time Monitoring AI Architecture | Dvip Patel</title>
+<meta name="keywords" content="Dvip Patel, real-time monitoring AI architecture, object detection monitoring system, RTSP MediaMTX FastAPI, YOLO stream profiling">
+<meta name="description" content="How Dvip Patel designed a real-time AI monitoring architecture using RTSP, MediaMTX, FastAPI, WebSockets, YOLO, and profiling.">
 <meta name="author" content="Dvip Patel">
 <link rel="canonical" href="http://localhost:1313/posts/real-time-monitoring-ai-architecture/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.4ef2299ae814559c4055cd3d15919aff78737e44fa7af337c506246832ba458a.css" integrity="sha256-TvIpmugUVZxAVc09FZGa/3hzfkT6evM3xQYkaDK6RYo=" rel="preload stylesheet" as="style">
@@ -103,7 +97,7 @@ I mean the Security Camera. It uses a protocol called ‘RTSP’, which MediaMTX
     <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="દ્વીપBlogs (Alt + H)">દ્વીપBlogs</a>
+            <a href="http://localhost:1313/" accesskey="h" title="Dvip Patel (Alt + H)">Dvip Patel</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -139,6 +133,9 @@ I mean the Security Camera. It uses a protocol called ‘RTSP’, which MediaMTX
     <h1 class="post-title entry-hint-parent">
       Real-Time Monitoring AI Architecture
     </h1>
+    <div class="post-description">
+      How Dvip Patel designed a real-time AI monitoring architecture using RTSP, MediaMTX, FastAPI, WebSockets, YOLO, and profiling.
+    </div>
     <div class="post-meta"><span title='2026-05-11 23:22:00 +0530 IST'>May 11, 2026</span>&nbsp;·&nbsp;<span>4 min</span>&nbsp;·&nbsp;<span>Dvip Patel</span>
 
 </div>
@@ -238,6 +235,13 @@ If you’ve got any more questions, feel free to DM me on my socials.</p>
 
   <footer class="post-footer">
     <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/ai/">AI</a></li>
+      <li><a href="http://localhost:1313/tags/computer-vision/">Computer Vision</a></li>
+      <li><a href="http://localhost:1313/tags/rtsp/">RTSP</a></li>
+      <li><a href="http://localhost:1313/tags/mediamtx/">MediaMTX</a></li>
+      <li><a href="http://localhost:1313/tags/fastapi/">FastAPI</a></li>
+      <li><a href="http://localhost:1313/tags/yolo/">YOLO</a></li>
+      <li><a href="http://localhost:1313/tags/websockets/">WebSockets</a></li>
     </ul>
 <nav class="paginav">
   <a class="prev" href="http://localhost:1313/posts/from-prompt-to-dashboard-building-secure-text-to-sql-analytics-bot/">
@@ -256,7 +260,7 @@ If you’ve got any more questions, feel free to DM me on my socials.</p>
 <ul class="share-buttons">
     <li>
         <a target="_blank" rel="noopener noreferrer" aria-label="share Real-Time Monitoring AI Architecture on x"
-            href="https://x.com/intent/tweet/?text=Real-Time%20Monitoring%20AI%20Architecture&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2freal-time-monitoring-ai-architecture%2f&amp;hashtags=">
+            href="https://x.com/intent/tweet/?text=Real-Time%20Monitoring%20AI%20Architecture&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2freal-time-monitoring-ai-architecture%2f&amp;hashtags=AI%2cComputerVision%2cRTSP%2cMediaMTX%2cFastAPI%2cYOLO%2cWebSockets">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z" />
@@ -325,7 +329,7 @@ If you’ve got any more questions, feel free to DM me on my socials.</p>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="http://localhost:1313/">દ્વીપBlogs</a></span> · 
+        <span>&copy; 2026 <a href="http://localhost:1313/">Dvip Patel</a></span> · 
 
     <span>
         Powered by

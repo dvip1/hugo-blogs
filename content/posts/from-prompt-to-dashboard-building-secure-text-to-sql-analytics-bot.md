@@ -2,6 +2,23 @@
 title: "From Prompt to Dashboard: Building a Secure Text-to-SQL Analytics Bot"
 date: 2026-05-15
 draft: false
+description: "How Dvip Patel built a secure text-to-SQL analytics bot that turns natural-language questions into database queries, charts, and dashboards."
+summary: "A project write-up on building a secure text-to-SQL analytics chatbot with read-only database access, SQL safety checks, stored chat history, and generated visualizations."
+tags:
+  - AI
+  - Text-to-SQL
+  - Analytics
+  - Dashboards
+  - Database Security
+categories:
+  - Projects
+  - Data Products
+keywords:
+  - Dvip Patel
+  - secure text to SQL analytics bot
+  - AI dashboard builder
+  - chatbot SQL visualization
+  - natural language analytics
 ---
 
 Let me define the problem statement first:  

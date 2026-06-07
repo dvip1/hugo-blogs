@@ -1,6 +1,6 @@
 baseURL = 'https://blogs.dvippatel.in/'
-languageCode = 'en-us'
-title = "દ્વીપBlogs"
+locale = 'en-us'
+title = "Dvip Patel"
 theme = 'PaperMod'
 buildFuture = true
 
@@ -8,6 +8,8 @@ buildFuture = true
     DateFormat = "January 2, 2006"
     defaultTheme = "auto" # Changed from auto to dark to test if it's working
     author = "Dvip Patel"
+    description = "Personal technical blog by Dvip Patel about AI systems, software engineering, data products, architecture, and project build notes."
+    keywords = ["Dvip Patel", "Dvip Patel blog", "AI systems", "software engineering", "data products", "FastAPI", "computer vision", "text to SQL analytics"]
     
     # Theme Features
     ShowReadingTime = true
@@ -38,8 +40,8 @@ buildFuture = true
     url = "tags"
 
   [params.homeInfoParams]
-  Title = "Hi there 👋"
-  Content = "Welcome to my blog. I am Dvip Patel. I post random things that comes to my mind. If you like what you see, follow along! "
+  Title = "Dvip Patel"
+  Content = "Welcome to my blog. I write about AI systems, software engineering, data products, architecture, and project build notes. If you like what you see, follow along! "
 
   [[params.socialIcons]]
   name = "x"
@@ -52,6 +54,17 @@ buildFuture = true
   [[params.socialIcons]]
   name = "github"
   url = "https://github.com/dvip1"
+
+  [params.social]
+    twitter = "PatelDvip"
+
+  [params.schema]
+    publisherType = "Person"
+    sameAs = [
+      "https://x.com/PatelDvip/",
+      "https://www.linkedin.com/in/dvip-patel-23320a230/",
+      "https://github.com/dvip1"
+    ]
 
 
 [services]

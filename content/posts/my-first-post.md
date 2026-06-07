@@ -2,6 +2,11 @@
 title = 'Getting Started with Git'
 date = 2026-02-01T12:52:20+05:30
 draft = false
+description = "A beginner-friendly Git and GitHub setup guide for Windows, covering Git installation, GitHub CLI login, cloning, branches, commits, and pushing."
+summary = "A practical Git and GitHub starter guide for setting up Git on Windows, signing in with GitHub CLI or SSH, cloning repositories, using branches, and following a basic team workflow."
+tags = ["Git", "GitHub", "Windows", "Developer Tools"]
+categories = ["Guides"]
+keywords = ["Dvip Patel", "getting started with Git", "GitHub setup Windows", "Git branch workflow", "GitHub CLI login"]
 +++
 
 

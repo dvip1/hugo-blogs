@@ -2,26 +2,85 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:32724/posts/from-prompt-to-dashboard-building-secure-text-to-sql-analytics-bot/</loc>
+    <loc>http://localhost:1313/tags/ai/</loc>
     <lastmod>2026-05-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:32724/posts/</loc>
+    <loc>http://localhost:1313/tags/analytics/</loc>
     <lastmod>2026-05-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:32724/</loc>
+    <loc>http://localhost:1313/categories/</loc>
     <lastmod>2026-05-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:32724/posts/real-time-monitoring-ai-architecture/</loc>
+    <loc>http://localhost:1313/tags/dashboards/</loc>
+    <lastmod>2026-05-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/data-products/</loc>
+    <lastmod>2026-05-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/database-security/</loc>
+    <lastmod>2026-05-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-05-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/from-prompt-to-dashboard-building-secure-text-to-sql-analytics-bot/</loc>
+    <lastmod>2026-05-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2026-05-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/projects/</loc>
+    <lastmod>2026-05-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-05-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/text-to-sql/</loc>
+    <lastmod>2026-05-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/architecture/</loc>
     <lastmod>2026-05-11T23:22:00+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:32724/privacy-policy/</loc>
+    <loc>http://localhost:1313/tags/computer-vision/</loc>
+    <lastmod>2026-05-11T23:22:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/fastapi/</loc>
+    <lastmod>2026-05-11T23:22:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/mediamtx/</loc>
+    <lastmod>2026-05-11T23:22:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/real-time-monitoring-ai-architecture/</loc>
+    <lastmod>2026-05-11T23:22:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/rtsp/</loc>
+    <lastmod>2026-05-11T23:22:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/websockets/</loc>
+    <lastmod>2026-05-11T23:22:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/yolo/</loc>
+    <lastmod>2026-05-11T23:22:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/privacy-policy/</loc>
     <lastmod>2026-02-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:32724/posts/my-first-post/</loc>
+    <loc>http://localhost:1313/tags/developer-tools/</loc>
     <lastmod>2026-02-01T12:52:20+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:32724/categories/</loc>
+    <loc>http://localhost:1313/posts/my-first-post/</loc>
+    <lastmod>2026-02-01T12:52:20+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:32724/tags/</loc>
+    <loc>http://localhost:1313/tags/git/</loc>
+    <lastmod>2026-02-01T12:52:20+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/github/</loc>
+    <lastmod>2026-02-01T12:52:20+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/guides/</loc>
+    <lastmod>2026-02-01T12:52:20+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/windows/</loc>
+    <lastmod>2026-02-01T12:52:20+05:30</lastmod>
   </url>
 </urlset>

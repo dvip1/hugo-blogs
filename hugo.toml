@@ -1,6 +1,6 @@
 baseURL = 'https://blogs.dvippatel.in/'
 locale = 'en-us'
-title = "Dvip Patel"
+title = "દ્વીપ Blogs"
 theme = 'PaperMod'
 buildFuture = true
 

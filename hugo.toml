@@ -19,6 +19,8 @@ buildFuture = true
     ShowCodeCopyButtons = true 
     ShowRssButtonInSectionTermList = true
     UseHugoToc = true
+    ShowToc = true
+    TocOpen = false
 
 
 [params.profileMode]

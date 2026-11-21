@@ -24,17 +24,35 @@
 }
 
 :root[data-theme="dark"] {
-    --theme: #151916;
-    --entry: #151916;
-    --primary: #e6e9e3;
-    --secondary: #9ba59c;
-    --tertiary: #2a302b;
-    --content: #d5dad2;
-    --code-block-bg: #1b201c;
-    --code-bg: #222823;
-    --border: #2a302b;
-    --accent: #8ecba8;
-    --link-underline: rgb(142 203 168 / 0.35);
+    /* Ink-green night: tinted like the light paper, cream headings, mint accent */
+    --theme: #101814;
+    --entry: #16201b;
+    --primary: #efe8d6;
+    --secondary: #96a69a;
+    --tertiary: #24302a;
+    --content: #d3dacf;
+    --code-block-bg: #0b110e;
+    --code-bg: #1d2922;
+    --border: #24302a;
+    --accent: #8fd4ac;
+    --link-underline: rgb(143 212 172 / 0.4);
+}
+
+/* A faint mint glow at the top of the page gives dark mode some depth */
+[data-theme="dark"] body {
+    background-image: radial-gradient(120% 60% at 50% -10%, rgb(143 212 172 / 0.07), transparent 70%);
+    background-repeat: no-repeat;
+}
+
+/* Bright screenshots and diagrams are dimmed slightly at night; full brightness on hover */
+[data-theme="dark"] .post-content img,
+[data-theme="dark"] .entry-cover img {
+    filter: brightness(0.86) saturate(0.95);
+    transition: filter 0.2s;
+}
+
+[data-theme="dark"] .post-content img:hover {
+    filter: none;
 }
 
 .list,
@@ -313,10 +331,102 @@ p {
     line-height: 1.6;
 }
 
+/* Table of contents: quiet card with an accent rule */
 .toc {
     font-family: var(--font-ui);
     font-size: 15px;
-    background: none;
+    background: var(--code-bg);
+    border: 0;
+    border-inline-start: 2px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    padding: 0.7em 1.1em;
+}
+
+.toc details summary {
+    font-family: var(--font-heading);
+    font-variation-settings: "SOFT" 100;
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.toc .inner {
+    margin: 0.6em 0 0.2em;
+}
+
+.toc ul {
+    list-style: none;
+    padding-inline-start: 0.2em;
+}
+
+.toc li {
+    margin: 0.3em 0;
+}
+
+.toc a {
+    color: var(--secondary);
+}
+
+.toc a:hover {
+    color: var(--accent);
+}
+
+/* Images and code blocks get soft corners */
+.post-content img {
+    border-radius: 6px;
+}
+
+.post-content pre,
+.post-content .highlight pre {
+    border-radius: 8px;
+}
+
+/* Cookie banner: floating card in the site palette (overrides cookieconsent's inline colours) */
+.cc-window.cc-banner {
+    left: auto !important;
+    right: 16px !important;
+    bottom: 16px !important;
+    max-width: 420px;
+    padding: 14px 16px !important;
+    gap: 12px;
+    font-family: var(--font-ui) !important;
+    font-size: 14px !important;
+    line-height: 1.5;
+    color: var(--content) !important;
+    background: var(--entry) !important;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    box-shadow: 0 8px 28px rgb(0 0 0 / 0.14);
+}
+
+.cc-window .cc-link {
+    color: var(--accent) !important;
+    opacity: 1;
+    padding: 0;
+}
+
+.cc-window .cc-btn {
+    font-family: var(--font-ui);
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    color: var(--theme) !important;
+    background: var(--accent) !important;
+    border: 0 !important;
+    border-radius: 6px;
+    padding: 0.45em 1.1em !important;
+}
+
+.cc-window .cc-btn:hover {
+    filter: brightness(1.08);
+    text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+    .cc-window.cc-banner {
+        left: 16px !important;
+        max-width: none;
+    }
 }
 
 /* Tags as outlined pills with a tag icon */

@@ -23,7 +23,7 @@ Below is my stack and how the components interact with each other.
 
 Let’s start from the beginning.
 
-### First Phase
+## First Phase
 
 First there was Light.
 
@@ -35,7 +35,7 @@ My MediaMTX server can handle different formats by itself, so the backend doesn�
 
 `service 1` takes in the feed, divides it into frames, runs object detection models on it, and passes it back to MediaMTX, which hosts it for our client to see.
 
-### Second Phase
+## Second Phase
 
 Data is the king.
 
@@ -65,7 +65,7 @@ CREATE TABLE public.count_windows (
 * **count**: From the tracking, it counts the detected objects.
 * **window_start / window_end**: Counts in a specified interval. The smaller the interval, the more data to plot, but it uses up more memory, and vice versa.
 
-### Third Phase
+## Third Phase
 
 This is what the user ends up seeing; it combines everything so far for the client.
 
@@ -76,7 +76,7 @@ The MediaMTX stream is encrypted by our backend, so only those who are authorize
 
 And voilà! We have our real-time monitoring system.
 
-### Problèmes
+## Problèmes
 Since I've build such a large system, I  faced a lot of bottlenecks. 
 Here are few below:  
 - **latency issues**: I faced this a lot earlier, turning down the camera quality(1440p-720p) helped a ton. I started using yolov8n models and basically most of the issues disappeared. 
@@ -110,7 +110,7 @@ Here are few below:
   Without profiling, debugging real-time systems becomes mostly educated guessing.
 
 
-### Extensive Modular Design
+## Extensive Modular Design
 This is where MediaMTX really shines. Not only does it handle the protocol, but it can also handle multiple streams and multiple cameras. So, the design becomes much more extensible with almost no effort.
 
 ![Modular stream and object detection architecture](/images/posts/real-time-monitoring-ai-architecture/modular-streams.webp)
@@ -121,13 +121,13 @@ This really helps, as I can run multiple small streams and models on a single sy
 
 The networking bit gets even better, especially when we talk about deployment. This is where we might require a TURN server so that MediaMTX can properly deliver video, though we won't dive into that here.
 
-### Testing the System
+## Testing the System
 
 For testing the system, I created artificial RTSP servers using ffmpeg, which looped through our existing testing and validation data and fed it directly to MediaMTX.
 
 So, instead of using actual live data—which takes time to set up and requires physical presence—this eased the process, allowing us to test out the entire backend system and its integration.
 
-### Conclusion
+## Conclusion
 
 This took me quite some time to make, and I hope you enjoyed reading it as much as I did writing it.
 If you’ve got any more questions, feel free to DM me on my socials.

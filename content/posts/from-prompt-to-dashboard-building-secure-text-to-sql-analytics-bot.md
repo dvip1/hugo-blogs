@@ -34,19 +34,19 @@ Well it is simple if you ignore the security risk that it could be, plus how cou
 I was asking these questions to myself as well.  
 So let's start from the very beginning and walk our way through it.  
 
-### Choosing a LLM
+## Choosing a LLM
 As this was experimental project, I wanted something that is cheap and dependable if the project works.  
 I could've gone with something like "Open Router" which can provide multiple models and I could switch between them.  
 But I choose Google, specifically because of their open gemma4 models.   
 Those models weren't only cheap but also very reliable with my testing.  
 Not only that but Gemini can provide JSON formatted Data in the format I want which is a game changer but competitors like openai can also do the same. 
 
-### Sanitizing the data
+## Sanitizing the data
 For this I wrote a strict prompt which should block most prompt injection, I also wrote some regex which blocks harmful prompts such as `DROP`, `INSERT` and such.  
 But regex alone isn't very reliable.  
 I made a new user which only has read access to the tables that are useful to LLM, so even if bad actor manages to skip every check before, they still won't be able to run anything malicious.  
 
-### Storing the Data
+## Storing the Data
 So we've integrated chatbot, and we've sanitized the data. Now how do we store it ?   
 I designed a structure which is very extensible.  
   
@@ -92,7 +92,7 @@ is_saved BOOLEAN  DEFAULT  FALSE
 - sql_query: is query from response from bot
 - we'll later discuss is_saved & which_type
 
-### Visualizing the Data
+## Visualizing the Data
 
 This is everything that client sees, for this I won't be going into UI but rather how I'm getting information.  
   
@@ -102,7 +102,7 @@ This is everything that client sees, for this I won't be going into UI but rathe
  And the is_saved bit also very interesting,  
  This flag allows user to place all the things that they gathered from the bot and save it in the dashboard and because I'm saving everything in SQL Query, every chart and tables are up to date.
 
-### Future Scope & Conclusion 
+## Future Scope & Conclusion 
 While gemma-26B is relatively cheap, it still costs real money and isn't very easy to scale up. So as we gather more data relying on vector database would be much more feasible and would be very cheap. But that's a far thought for now.  
 Reach my DMs if you have anything particular to ask!
 

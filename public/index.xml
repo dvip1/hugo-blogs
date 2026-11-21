@@ -1,35 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>દ્વીપ Blogs</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on દ્વીપ Blogs</description>
-    <generator>Hugo -- 0.161.0</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 15 May 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>From Prompt to Dashboard: Building a Secure Text-to-SQL Analytics Bot</title>
-      <link>http://localhost:1313/posts/from-prompt-to-dashboard-building-secure-text-to-sql-analytics-bot/</link>
-      <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/from-prompt-to-dashboard-building-secure-text-to-sql-analytics-bot/</guid>
-      <description>How Dvip Patel built a secure text-to-SQL analytics bot that turns natural-language questions into database queries, charts, and dashboards.</description>
-    </item>
-    <item>
-      <title>Real-Time Monitoring AI Architecture</title>
-      <link>http://localhost:1313/posts/real-time-monitoring-ai-architecture/</link>
-      <pubDate>Mon, 11 May 2026 23:22:00 +0530</pubDate>
-      <guid>http://localhost:1313/posts/real-time-monitoring-ai-architecture/</guid>
-      <description>How Dvip Patel designed a real-time AI monitoring architecture using RTSP, MediaMTX, FastAPI, WebSockets, YOLO, and profiling.</description>
-    </item>
-    <item>
-      <title>Privacy Policy</title>
-      <link>http://localhost:1313/privacy-policy/</link>
-      <pubDate>Mon, 02 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/privacy-policy/</guid>
-      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>દ્વીપ Blogs</title><link>https://blogs.dvippatel.in/</link><description>Recent content on દ્વીપ Blogs</description><generator>Hugo -- 0.167.0</generator><language>en-us</language><lastBuildDate>Fri, 15 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blogs.dvippatel.in/index.xml" rel="self" type="application/rss+xml"/><item><title>From Prompt to Dashboard: Building a Secure Text-to-SQL Analytics Bot</title><link>https://blogs.dvippatel.in/posts/from-prompt-to-dashboard-building-secure-text-to-sql-analytics-bot/</link><pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate><guid>https://blogs.dvippatel.in/posts/from-prompt-to-dashboard-building-secure-text-to-sql-analytics-bot/</guid><description>How Dvip Patel built a secure text-to-SQL analytics bot that turns natural-language questions into database queries, charts, and dashboards.</description></item><item><title>Real-Time Monitoring AI Architecture</title><link>https://blogs.dvippatel.in/posts/real-time-monitoring-ai-architecture/</link><pubDate>Mon, 11 May 2026 23:22:00 +0530</pubDate><guid>https://blogs.dvippatel.in/posts/real-time-monitoring-ai-architecture/</guid><description>How Dvip Patel designed a real-time AI monitoring architecture using RTSP, MediaMTX, FastAPI, WebSockets, YOLO, and profiling.</description></item><item><title>Privacy Policy</title><link>https://blogs.dvippatel.in/privacy-policy/</link><pubDate>Mon, 02 Feb 2026 00:00:00 +0000</pubDate><guid>https://blogs.dvippatel.in/privacy-policy/</guid><description>&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Welcome to &lt;strong&gt;દ્વીપBlogs&lt;/strong&gt;. Your privacy is important to me. This policy explains what information is collected when you visit this site and how it is used.&lt;/p&gt;
-&lt;h2 id=&#34;1-information-collection-google-analytics&#34;&gt;1. Information Collection (Google Analytics)&lt;/h2&gt;
+&lt;h2 id="1-information-collection-google-analytics"&gt;1. Information Collection (Google Analytics)&lt;/h2&gt;
 &lt;p&gt;I use &lt;strong&gt;Google Analytics 4 (GA4)&lt;/strong&gt; to understand how visitors interact with my blog. This helps me see which posts are helpful and which topics I should write more about.&lt;/p&gt;
 &lt;p&gt;GA4 collects data such as:&lt;/p&gt;
 &lt;ul&gt;
@@ -38,14 +9,4 @@
 &lt;li&gt;How long you stayed on a page.&lt;/li&gt;
 &lt;li&gt;Which links you clicked.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; This data is anonymized and does not allow me to identify you personally. Google Analytics uses &amp;ldquo;cookies&amp;rdquo; to collect this data.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Getting Started with Git</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
-      <pubDate>Sun, 01 Feb 2026 12:52:20 +0530</pubDate>
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
-      <description>A beginner-friendly Git and GitHub setup guide for Windows, covering Git installation, GitHub CLI login, cloning, branches, commits, and pushing.</description>
-    </item>
-  </channel>
-</rss>
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; This data is anonymized and does not allow me to identify you personally. Google Analytics uses &amp;ldquo;cookies&amp;rdquo; to collect this data.&lt;/p&gt;</description></item><item><title>Getting Started with Git</title><link>https://blogs.dvippatel.in/posts/my-first-post/</link><pubDate>Sun, 01 Feb 2026 12:52:20 +0530</pubDate><guid>https://blogs.dvippatel.in/posts/my-first-post/</guid><description>A beginner-friendly Git and GitHub setup guide for Windows, covering Git installation, GitHub CLI login, cloning, branches, commits, and pushing.</description></item></channel></rss>

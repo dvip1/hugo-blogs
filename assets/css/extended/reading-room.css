@@ -1,0 +1,306 @@
+/* Reading Room: serif type on soft grey-green paper, deep green accent.
+   Loaded automatically by PaperMod (assets/css/extended/*.css).
+   Fonts are linked in layouts/partials/extend_head.html. */
+
+:root {
+    --main-width: 680px;
+    --radius: 4px;
+    --theme: #f5f6f2;
+    --entry: #f5f6f2;
+    --primary: #1f2620;
+    --secondary: #5d665e;
+    --tertiary: #dcdfd6;
+    --content: #1f2620;
+    --code-block-bg: #1c211d;
+    --code-bg: #eceee7;
+    --border: #dcdfd6;
+    --accent: #2c6a4c;
+    --font-serif: "Newsreader", "Noto Serif Gujarati", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+    --font-ui: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+}
+
+:root[data-theme="dark"] {
+    --theme: #151916;
+    --entry: #151916;
+    --primary: #e6e9e3;
+    --secondary: #9ba59c;
+    --tertiary: #2a302b;
+    --content: #d5dad2;
+    --code-block-bg: #1b201c;
+    --code-bg: #222823;
+    --border: #2a302b;
+    --accent: #8ecba8;
+}
+
+.list,
+[data-theme="dark"] .list {
+    background: var(--theme);
+}
+
+/* ---------- Type ---------- */
+
+body {
+    font-family: var(--font-serif);
+    font-size: 19px;
+    line-height: 1.65;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500;
+    text-wrap: balance;
+}
+
+::selection {
+    background: var(--accent);
+    color: var(--theme);
+}
+
+/* Small sans labels: menu, dates, breadcrumbs, footer */
+#menu a,
+.entry-footer,
+.post-meta,
+.breadcrumbs,
+.breadcrumbs a,
+.footer,
+.pagination a,
+.paginav .title {
+    font-family: var(--font-ui);
+}
+
+.entry-footer,
+.post-meta,
+.breadcrumbs,
+.breadcrumbs a {
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+/* ---------- Header ---------- */
+
+.logo a {
+    font-weight: 600;
+    font-size: 23px;
+}
+
+#menu a {
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: var(--secondary);
+}
+
+#menu a:hover,
+#menu .active {
+    color: var(--primary);
+}
+
+#menu .active {
+    border-bottom: 1px solid var(--accent);
+}
+
+/* ---------- Home intro ---------- */
+
+.first-entry.home-info {
+    min-height: 0;
+    margin: calc(var(--gap) * 1.5) 0 calc(var(--gap) * 2);
+}
+
+.home-info .entry-header h1 {
+    font-size: 38px;
+    line-height: 1.15;
+}
+
+.home-info .entry-content {
+    font-size: 18px;
+    color: var(--secondary);
+}
+
+.social-icons {
+    margin-inline-start: -10px;
+}
+
+.social-icons a {
+    color: var(--secondary);
+}
+
+.social-icons a:hover {
+    color: var(--accent);
+}
+
+.social-icons a svg {
+    height: 21px;
+    width: 21px;
+}
+
+/* ---------- Post list: open entries separated by a rule ---------- */
+
+.post-entry {
+    margin-bottom: 0;
+    padding: calc(var(--gap) * 1.1) 0;
+    background: none;
+    border: 0;
+    border-top: 1px solid var(--border);
+    border-radius: 0;
+}
+
+.post-entry:active {
+    transform: none;
+}
+
+.entry-header h2 {
+    font-size: 26px;
+    line-height: 1.22;
+    transition: color 0.15s;
+}
+
+.post-entry:hover .entry-header h2 {
+    color: var(--accent);
+}
+
+.entry-content {
+    font-size: 17px;
+    line-height: 1.55;
+}
+
+.post-entry .entry-footer {
+    margin-top: 10px;
+}
+
+/* ---------- Meta row with icons ---------- */
+
+.meta-items {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px 18px;
+}
+
+.meta-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.meta-item .icon {
+    flex: none;
+    color: var(--accent);
+}
+
+/* ---------- Single post ---------- */
+
+.post-title {
+    font-size: 44px;
+    line-height: 1.12;
+    letter-spacing: -0.01em;
+}
+
+.post-description {
+    font-style: italic;
+    font-size: 20px;
+}
+
+.post-meta {
+    margin-top: 12px;
+}
+
+.post-content {
+    line-height: 1.7;
+}
+
+.post-content h2 {
+    font-size: 30px;
+}
+
+.post-content h3 {
+    font-size: 24px;
+}
+
+.post-content a {
+    color: var(--accent);
+    box-shadow: none;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+
+.post-content a:hover {
+    text-decoration-thickness: 2px;
+}
+
+.post-content blockquote {
+    border-inline-start: 2px solid var(--accent);
+    font-style: italic;
+    color: var(--secondary);
+}
+
+.toc {
+    font-family: var(--font-ui);
+    font-size: 15px;
+    background: none;
+}
+
+/* Tags as outlined pills with a tag icon */
+.post-tags a {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-family: var(--font-ui);
+    font-size: 13px;
+    line-height: 30px;
+    background: none;
+    border-radius: 999px;
+}
+
+.post-tags a::before {
+    content: "";
+    width: 13px;
+    height: 13px;
+    flex: none;
+    background: var(--accent);
+    -webkit-mask: var(--icon-tag) center / contain no-repeat;
+    mask: var(--icon-tag) center / contain no-repeat;
+}
+
+.post-tags a:hover {
+    background: none;
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+:root {
+    --icon-tag: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z'/%3E%3Ccircle cx='7.5' cy='7.5' r='1'/%3E%3C/svg%3E");
+}
+
+.share-buttons,
+.paginav {
+    background: none;
+}
+
+.footer {
+    font-size: 12px;
+}
+
+/* ---------- Small screens ---------- */
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+
+    .home-info .entry-header h1 {
+        font-size: 32px;
+    }
+
+    .post-title {
+        font-size: 34px;
+    }
+
+    .entry-header h2 {
+        font-size: 23px;
+    }
+}

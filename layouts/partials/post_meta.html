@@ -1,0 +1,17 @@
+{{- /* Overrides PaperMod's post_meta.html: same items, each with a small icon. */ -}}
+<span class="meta-items">
+{{- if not .Date.IsZero }}
+<span class="meta-item" title="{{ .Date }}">{{ partial "icon.html" "calendar" }}{{ .Date | time.Format (default ":date_long" site.Params.DateFormat) }}</span>
+{{- end }}
+{{- if (.Param "ShowReadingTime") }}
+<span class="meta-item">{{ partial "icon.html" "clock" }}{{ i18n "read_time" .ReadingTime | default (printf "%d min" .ReadingTime) }}</span>
+{{- end }}
+{{- if (.Param "ShowWordCount") }}
+<span class="meta-item">{{ partial "icon.html" "words" }}{{ i18n "words" .WordCount | default (printf "%d words" .WordCount) }}</span>
+{{- end }}
+{{- if not (.Param "hideAuthor") }}
+{{- with (partial "author.html" .) }}
+<span class="meta-item">{{ partial "icon.html" "user" }}{{ . }}</span>
+{{- end }}
+{{- end }}
+</span>

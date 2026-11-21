@@ -25,19 +25,23 @@ GA4 collects data such as:
 
 This site is hosted on **AWS Amplify**. Like most hosting providers, AWS logs basic technical information such as IP addresses and request timestamps for security and performance monitoring. These logs are stored on Amazon's secure servers.
 
-## 3. Third-Party Links
+## 3. Fonts (Google Fonts)
+
+The typefaces on this site are loaded from **Google Fonts**. When your browser fetches them, Google receives your IP address and browser details, as with any web request. Google Fonts does not set cookies.
+
+## 4. Third-Party Links
 
 My blog posts may contain links to external websites (like GitHub or project documentation). I am not responsible for the privacy practices of those external sites.
 
-## 4. Your Choices
+## 5. Your Choices
 
 You can opt-out of Google Analytics tracking by:
 * Disabling cookies in your browser settings.
 * Using a "Do Not Track" browser extension (like uBlock Origin or Privacy Badger).
 
-## 5. Contact
+## 6. Contact
 
 If you have any questions about this policy, feel free to reach out to me via my GitHub.
 
 ---
-*Last updated: February 2, 2026*
+*Last updated: November 10, 2026*

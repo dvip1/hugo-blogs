@@ -6,7 +6,7 @@ buildFuture = true
 
 [params]
     DateFormat = "January 2, 2006"
-    defaultTheme = "auto" # Changed from auto to dark to test if it's working
+    defaultTheme = "light" # Light by default; the header toggle still switches to dark and remembers the choice
     author = "Dvip Patel"
     description = "Personal technical blog by Dvip Patel about AI systems, software engineering, data products, architecture, and project build notes."
     keywords = ["Dvip Patel", "Dvip Patel blog", "AI systems", "software engineering", "data products", "FastAPI", "computer vision", "text to SQL analytics"]

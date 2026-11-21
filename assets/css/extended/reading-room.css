@@ -384,6 +384,7 @@ p {
 
 /* Cookie banner: floating card in the site palette (overrides cookieconsent's inline colours) */
 .cc-window.cc-banner {
+    box-sizing: border-box;
     left: auto !important;
     right: 16px !important;
     bottom: 16px !important;
@@ -425,7 +426,9 @@ p {
 @media screen and (max-width: 600px) {
     .cc-window.cc-banner {
         left: 16px !important;
+        width: auto !important;
         max-width: none;
+        box-sizing: border-box;
     }
 }
 
@@ -468,6 +471,59 @@ p {
 
 .footer {
     font-size: 12px;
+}
+
+/* ---------- Margin notes ({{< aside >}} shortcode) ---------- */
+
+/* Narrow screens: an inline note with an accent rule */
+.margin-note {
+    display: block;
+    margin: 1.6em 0;
+    padding: 0.15em 0 0.15em 1em;
+    border-inline-start: 2px solid var(--accent);
+    font-family: var(--font-body);
+    font-size: 15px;
+    line-height: 1.55;
+    color: var(--secondary);
+}
+
+.margin-note-title {
+    display: block;
+    margin-bottom: 0.25em;
+    font-family: var(--font-heading);
+    font-variation-settings: "SOFT" 100;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    color: var(--primary);
+}
+
+.post-content .margin-note p {
+    margin: 0 0 0.6em;
+}
+
+.post-content .margin-note > :last-child {
+    margin-bottom: 0;
+}
+
+.post-content .margin-note code {
+    font-size: 0.88em;
+}
+
+/* Wide screens: float into the right margin beside the next paragraph */
+@media screen and (min-width: 1280px) {
+    .margin-note {
+        float: right;
+        clear: right;
+        width: 220px;
+        margin: 0.35em -264px 1.2em 0;
+        padding: 0 0 0 14px;
+        border-inline-start: 1px solid var(--border);
+    }
+
+    .margin-note-title {
+        font-size: 15px;
+    }
 }
 
 /* ---------- Small screens ---------- */

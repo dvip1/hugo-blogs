@@ -59,6 +59,13 @@ keywords = ["Dvip Patel", "real-time monitoring AI architecture", "object detect
 +++
 ```
 
+Margin notes: use the `aside` shortcode (`layouts/shortcodes/aside.html`) for side comments. Place it just before the paragraph it relates to; it floats into the right margin on wide screens (≥1280px) and renders inline with an accent rule on smaller ones. Body supports Markdown.
+
+```markdown
+{{</* aside */>}}MediaMTX can also re-publish the stream as WebRTC.{{</* /aside */>}}
+{{</* aside "Why not Kafka?" */>}}Overkill for a single-camera prototype.{{</* /aside */>}}
+```
+
 Recommended writing pattern:
 
 - Use one clear H1 from the post title and descriptive H2/H3 sections.
@@ -103,6 +110,10 @@ id = 'G-WLYGQMT86N'
 ```
 
 Be careful when changing analytics or cookies; update `content/privacy-policy.md` if tracking behavior changes.
+
+## Planned Changes
+
+`changes.md` is the backlog of future design, content, SEO, and tooling work, grouped by section. Check it before starting site improvements, add new ideas to the right section, and move items to **Done** (with date and commit) when shipped. Content changes to posts listed there still need the author's approval.
 
 ## Safe Editing Notes
 

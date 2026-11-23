@@ -192,11 +192,4 @@ The numbers matched the real box surprisingly closely.
 - **Memory for idle devices.** After compaction a device's buffer is emptied but keeps its allocation, about 28 KB per device, even after the device goes silent. Freeing empty buffers and setting `GOMEMLIMIT` would keep memory flat as the device count grows.
 - **HTTP timeouts.** The server uses the default `http.ListenAndServe` with no timeouts, which is fine for a benchmark but not for the open internet.
 
-## What I learned
-
-1. **Count operations, not bytes.** The disk and the CPU care about how many `write()` calls, syscalls and allocations you make. Batching cut disk write operations from about 2 million to about 28 thousand.
-2. **Let batches size themselves.** Taking whatever is queued gives you low latency at low load and big batches at high load, with nothing to tune.
-3. **Know exactly what durability you're promising.** Surviving `kill -9` and surviving power loss are different promises, and the gap between them is a lot of `fsync` calls.
-4. **Measure on the real box, or a faithful copy of it.** My first local numbers were capped by a 100 Mbit port, and btrfs behaved differently from ext4. The server never changed; the measurements did.
-
 The full code is on GitHub at [dvip1/super_optimized_logger_server](https://github.com/dvip1/super_optimized_logger_server).
